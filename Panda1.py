@@ -21,6 +21,7 @@ df.describe()
 
 #simple plot
 df.plot()
+#next line not required if started ipython in pylab mode (ipython --pylab)
 df.show()
 
 #return a dataframe showing matrix of correlation
