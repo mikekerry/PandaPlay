@@ -19,6 +19,10 @@ df.tail()
 #summary statistics
 df.describe()
 
+#simple plot
+df.plot()
+df.show()
+
 #return a dataframe showing matrix of correlation
 df.corr()
 
