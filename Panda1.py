@@ -16,11 +16,25 @@ df['time'] = pd.to_datetime(df['time'])
 df.head()
 df.tail()
 
+#counts of distinct values
+df['type'].value_counts()
+
+#return cell
+df['time'][0]
+
+#replace nulls
+df['name'].fillna('No value',inplace=True)
+df['desc'].fillna('No value',inplace=True)
+
 #summary statistics
 df.describe()
 
-#simple plot
+#plot all
 df.plot()
+
+#choose axis
+df.plot(x='time', y='altitude (m)')
+
 #next line not required if started ipython in pylab mode (ipython --pylab)
 df.show()
 
